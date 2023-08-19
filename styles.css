@@ -1,0 +1,781 @@
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url(./Fonts/SFDisplay-Regular.otf);
+}
+
+@font-face {
+  font-family: "SF Pro Display Bold";
+  src: url(./Fonts/SFDisplay-Bold.ttf);
+}
+
+@font-face {
+  font-family: "SF Pro Display Semibold";
+  src: url(./Fonts/SFDisplay-Semibold.otf);
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "SF Pro Display";
+  color: #222247;
+}
+
+main {
+  flex-grow: 1;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  width: 188px;
+  height: 100%;
+  margin-top: 16px;
+  margin-left: 32px;
+}
+
+.buttons {
+  justify-content: center;
+  align-items: center;
+  margin-left: 168px;
+}
+
+.login {
+  background: white;
+  border: none;
+  margin-right: 40px;
+}
+
+.topdemo {
+  width: 130px;
+  height: 50px;
+  margin-right: 32px;
+  margin-top: 30px;
+  background: none;
+  border: solid 1px #222247;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  margin-top: 68px;
+}
+.toptext {
+  display: flex;
+  flex-direction: column;
+}
+
+.diversity {
+  width: 100%;
+  height: auto;
+  font-family: "SF Pro Display Semibold";
+  font-size: 64px;
+  line-height: auto;
+  margin-left: 168px;
+  margin-bottom: 24px;
+  margin-top: 140px;
+}
+
+.freedemo {
+  width: 240px;
+  height: 50px;
+  padding-left: 73px;
+  padding-right: 72px;
+  margin-right: 12px;
+  background: #24cb8d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.bookcall {
+  width: 240px;
+  height: 50px;
+  padding-left: 73px;
+  padding-right: 72px;
+  background-color: white;
+  border: solid 1px #222247;
+  color: #222247;
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.booklongcall {
+  width: 510px;
+  height: 50px;
+  padding-left: 73px;
+  padding-right: 72px;
+  margin-top: 40px;
+  background-color: #f1f1f5;
+  border: solid 1px #222247;
+  color: #222247;
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.description {
+  width: 100%;
+  height: auto;
+  margin-left: 168px;
+  margin-top: 0;
+  font-family: "SF Pro Display Regular";
+  font-size: 28px;
+  line-height: auto;
+  width: 554px;
+  margin-bottom: 32px;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  text-align: right;
+  margin-bottom: 130px;
+}
+
+.border {
+  border: solid 1px black;
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.fundynamic {
+  width: 100%;
+  margin-top: 72px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.bonding {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.skillsframe {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  top: 88px;
+  left: 0;
+  padding-left: 80px;
+}
+
+.superpower {
+  position: relative;
+  width: 100%;
+  margin-top: 108px;
+  height: 1280px;
+  background-color: #24cb8d;
+  margin-bottom: 0px;
+}
+
+.spfreedemo {
+  width: 240px;
+  height: 50px;
+  padding-left: 73px;
+  padding-right: 72px;
+  margin-right: 12px;
+  background: #24cb8d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+}
+
+.spbookcall {
+  width: 240px;
+  height: 50px;
+  padding-left: 73px;
+  padding-right: 72px;
+  border: solid 1px white;
+  background-color: #222247;
+  color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.people {
+  position: absolute;
+  top: 0;
+  margin-bottom: 10%;
+  bottom: 10%;
+  width: 98%;
+  max-width: 100%;
+  height: auto;
+}
+
+.sidewaysborder {
+  width: 373px;
+  border: solid 1px #24cb8d;
+  rotate: 90deg;
+  position: relative;
+  z-index: 2;
+  bottom: -343px;
+  margin-left: -83px;
+}
+
+h2 {
+  position: relative;
+  color: white;
+  font-family: "SF Pro Display Bold";
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 55px;
+}
+
+.sp {
+  color: #24cb8d;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 82px;
+}
+
+.macbook {
+  width: 60%;
+  height: auto;
+  margin-right: 32px;
+  margin-top: 70px;
+}
+
+.cultureof {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -170px;
+  width: 630px;
+  height: auto;
+  font-size: 28px;
+  font-family: "SF Pro Display Regular";
+  text-align: right;
+  margin-right: 162px;
+  color: white;
+}
+.culture {
+  width: 630px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.bottomline {
+  background-color: #222247;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120vh;
+  margin-bottom: 0px;
+}
+
+.bottom {
+  color: #24cb8d;
+  width: 100%;
+  font-size: 76px;
+  font-family: "SF Pro Display Bold";
+}
+
+.softserveicon {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: auto;
+  margin-left: 20%;
+}
+
+.learnmore {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.whiteborder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px white;
+  width: 80%;
+  margin: auto;
+  bottom: 110px;
+}
+
+.champions {
+  position: relative;
+  width: 604px;
+  color: white;
+  font-family: "SF Pro Display Semibold";
+  font-size: 28px;
+  line-height: auto;
+  margin-top: -24px;
+  margin-bottom: 32px;
+}
+
+.nextlevel {
+  width: 100%;
+  height: 388px;
+  background-color: #f1f1f5;
+  text-align: center;
+  margin: auto;
+  font-size: 28px;
+
+  margin-bottom: 163px;
+}
+
+.thenext {
+  font-size: 77px;
+  margin-top: 68px;
+}
+
+.expert {
+  margin-top: 30px;
+  font-size: 35px;
+  margin-bottom: 68px;
+}
+
+.trustedby {
+  display: flex;
+  width: 87%;
+  height: auto;
+  text-align: center;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 140px;
+}
+
+.gain {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  font-size: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gainfreedemo {
+  width: 240px;
+  height: 50px;
+  padding-left: 73px;
+  padding-right: 72px;
+  background: #24cb8d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 18px;
+}
+.gaincontainer {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+}
+
+.try {
+  font-size: 28px;
+}
+
+.gainborderbottom {
+  border: solid 1px black;
+  margin: auto;
+  margin-top: 68px;
+  margin-bottom: 198px;
+  width: 80%;
+}
+
+.ellipse {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110vw;
+  height: 40vh;
+  border-radius: 100% 100% 0 0;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #3f3f6e;
+  z-index: 0; /* this puts the ellipse behind the footer */
+}
+
+.socialmedia {
+  color: white;
+  margin: auto;
+  margin-top: 48px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.follow {
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 6px;
+  margin-bottom: 36px;
+}
+.socialicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+  margin: auto;
+}
+.footer {
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  align-items: center;
+  background-color: #222247;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  height: auto;
+}
+
+@media screen and (max-width: 550px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 120px;
+    height: 100%;
+    margin-top: 16px;
+    margin-left: 32px;
+  }
+
+  .login {
+    background: white;
+    border: none;
+    margin-right: 12px;
+  }
+
+  .topdemo {
+    width: 120px;
+    height: 38px;
+    margin-right: 32px;
+    margin-top: 20px;
+    background: none;
+    border: solid 1px #222247;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+  }
+
+  .hero {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    flex: 1;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+
+  .toptext {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .diversity {
+    width: 100%;
+    height: auto;
+    font-family: "SF Pro Display Semibold";
+    font-size: 24px;
+    line-height: auto;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    margin-top: 24px;
+  }
+
+  .description {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .freedemo {
+    width: 120px;
+    height: 38px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 12px;
+    background: #24cb8d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+
+  .bookcall {
+    width: 120px;
+    height: 38px;
+    font-size: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: white;
+    border: solid 1px #222247;
+    color: #222247;
+    border-radius: 6px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .buttons {
+    margin-left: 24px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .fundynamic {
+    margin: auto;
+    width: 80%;
+    margin-top: 72px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .bonding {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .superpower {
+    position: relative;
+    width: 100%;
+    margin-top: 108px;
+    height: 320px;
+    background-color: #222247;
+    margin-bottom: 0px;
+  }
+
+  .skillsframe {
+    position: absolute;
+    width: 350px;
+    height: 220px;
+    top: 32px;
+    left: 0;
+    padding-left: 0px;
+    padding-right: 24px;
+  }
+
+  .people {
+    width: 100%;
+  }
+
+  .champions {
+    position: relative;
+    width: 60%;
+    height: auto;
+    font-size: 10px;
+    font-weight: 100;
+  }
+
+  h2 {
+    position: relative;
+    color: white;
+    font-family: "SF Pro Display Bold";
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 7px;
+    margin-bottom: 28px;
+  }
+
+  .sidewaysborder {
+    width: 116px;
+    border: solid 1px #24cb8d;
+    rotate: 90deg;
+    position: relative;
+    z-index: 2;
+    bottom: -97px;
+    margin-left: -38px;
+  }
+
+  .content {
+    margin-left: 37px;
+  }
+
+  .spfreedemo {
+    display: none;
+  }
+
+  .spbookcall {
+    display: none;
+  }
+
+  .macbook {
+    width: 40%;
+    height: auto;
+    margin-right: 24px;
+    margin-top: -34%;
+  }
+
+  .bottomline {
+    height: 550px;
+  }
+
+  .cultureof {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -170px;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    font-family: "SF Pro Display Regular";
+    text-align: right;
+    margin-right: 24px;
+    color: white;
+  }
+  .culture {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+  .bottom {
+    font-size: 24px;
+  }
+
+  .whiteborder {
+    bottom: 120px;
+  }
+
+  .nextlevel {
+    font-size: 16px;
+    height: 212px;
+    margin-bottom: 60px;
+  }
+  .ready {
+    padding-top: 20px;
+  }
+
+  .thenext {
+    font-size: 24px;
+  }
+
+  .expert {
+    font-size: 14px;
+  }
+
+  .booklongcall {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .gain {
+    font-size: 24px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+  }
+
+  .try {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .gainfreedemo {
+    width: 120px;
+    height: 38px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 12px;
+    background: #24cb8d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+
+  .gainborderbottom {
+    margin-bottom: 68px;
+    margin-top: 16px;
+  }
+
+  .socialmedia {
+    font-size: 24px;
+    margin-top: 48px;
+  }
+
+  .follow {
+    font-size: 14px;
+  }
+
+  .socialicons {
+    display: flex;
+    height: 36px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+  }
+
+  .ellipse {
+    height: 28vh;
+    overflow: hidden;
+  }
+
+  .footerinfo {
+    font-size: 10px;
+    width: 100%;
+  }
+}
