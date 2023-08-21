@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "SF Pro Display Regular";
+  font-family: "SFDisplay-Regular";
   src: url(./Fonts/SFDisplay-Regular.otf);
 }
 
 @font-face {
-  font-family: "SF Pro Display Bold";
+  font-family: "SFDisplay-Bold";
   src: url(./Fonts/SFDisplay-Bold.ttf);
 }
 
 @font-face {
-  font-family: "SF Pro Display Semibold";
+  font-family: "SFDisplay-Semibold";
   src: url(./Fonts/SFDisplay-Semibold.otf);
 }
 
@@ -26,7 +26,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  font-family: "SF Pro Display";
+  font-family: SFDisplay-Regular;
   color: #222247;
 }
 
@@ -38,17 +38,19 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .logo {
-  width: 188px;
+  width: 18vw;
   height: 100%;
-  margin-top: 16px;
-  margin-left: 32px;
+  margin-top: 20px;
+  margin-left: 62px;
 }
 
 .buttons {
   justify-content: center;
   align-items: center;
   margin-left: 168px;
+  margin-bottom: 120px;
 }
 
 .login {
@@ -74,7 +76,13 @@ nav {
   display: flex;
   flex-direction: row;
   margin-top: 68px;
+  background-image: url("./Photos/girlside.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-bottom: 124px;
 }
+
 .toptext {
   display: flex;
   flex-direction: column;
@@ -83,50 +91,61 @@ nav {
 .diversity {
   width: 100%;
   height: auto;
-  font-family: "SF Pro Display Semibold";
-  font-size: 64px;
+  font-family: SFDisplay-Semibold;
+  font-size: 4vw;
   line-height: auto;
   margin-left: 168px;
   margin-bottom: 24px;
   margin-top: 140px;
 }
 
-.freedemo {
-  width: 240px;
+.button {
+  width: 16vw;
   height: 50px;
-  padding-left: 73px;
-  padding-right: 72px;
   margin-right: 12px;
-  background: #24cb8d;
-  color: white;
+  margin-top: 30px;
+  background: none;
   border: none;
   border-radius: 6px;
-  overflow: hidden;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   display: inline-flex;
 }
 
-.bookcall {
-  width: 240px;
-  height: 50px;
-  padding-left: 73px;
-  padding-right: 72px;
-  background-color: white;
+.button-primary {
+  background: #24cb8d;
+  color: white;
+}
+
+.button-outline {
   border: solid 1px #222247;
   color: #222247;
-  border-radius: 6px;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  display: inline-flex;
+}
+
+.white {
+  border-color: #ffffff;
+  color: #fff;
+}
+
+.superpowerbuttons {
+  flex-direction: row;
+}
+.nav-button {
+  width: 10vw;
+  max-width: 120px;
+  margin-right: 62px;
+}
+
+.round {
+  width: 160px;
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
 }
 
 .booklongcall {
-  width: 510px;
+  width: 32vw;
   height: 50px;
-  padding-left: 73px;
-  padding-right: 72px;
   margin-top: 40px;
   background-color: #f1f1f5;
   border: solid 1px #222247;
@@ -143,18 +162,11 @@ nav {
   height: auto;
   margin-left: 168px;
   margin-top: 0;
-  font-family: "SF Pro Display Regular";
-  font-size: 28px;
+  font-family: SFDisplay-Regular;
+  font-size: 2vw;
   line-height: auto;
-  width: 554px;
-  margin-bottom: 32px;
-}
-
-.hero {
-  width: 100%;
-  height: auto;
-  text-align: right;
-  margin-bottom: 130px;
+  width: 40vw;
+  margin-bottom: 0px;
 }
 
 .border {
@@ -179,9 +191,10 @@ nav {
 
 .skillsframe {
   position: absolute;
-  width: 800px;
-  height: 500px;
+  width: 50vw;
+  height: 29vw;
   top: 88px;
+  background-color: #222247;
   left: 0;
   padding-left: 80px;
 }
@@ -193,63 +206,33 @@ nav {
   height: 1280px;
   background-color: #24cb8d;
   margin-bottom: 0px;
-}
-
-.spfreedemo {
-  width: 240px;
-  height: 50px;
-  padding-left: 73px;
-  padding-right: 72px;
-  margin-right: 12px;
-  background: #24cb8d;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  overflow: hidden;
-  justify-content: flex-start;
-  align-items: center;
-  display: inline-flex;
-}
-
-.spbookcall {
-  width: 240px;
-  height: 50px;
-  padding-left: 73px;
-  padding-right: 72px;
-  border: solid 1px white;
-  background-color: #222247;
-  color: white;
-  border-radius: 6px;
-  overflow: hidden;
-  justify-content: center;
-  align-items: flex-start;
+  z-index: 1;
 }
 
 .people {
   position: absolute;
   top: 0;
-  margin-bottom: 10%;
-  bottom: 10%;
-  width: 98%;
+
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
 
 .sidewaysborder {
-  width: 373px;
+  width: 419px;
   border: solid 1px #24cb8d;
   rotate: 90deg;
   position: relative;
   z-index: 2;
-  bottom: -343px;
-  margin-left: -83px;
+  bottom: -371px;
+  margin-left: -114px;
 }
 
 h2 {
   position: relative;
   color: white;
-  font-family: "SF Pro Display Bold";
-  font-size: 48px;
+  font-family: SFDisplay-Bold;
+  font-size: 4vw;
   font-weight: 700;
   margin-top: 55px;
 }
@@ -266,7 +249,7 @@ h2 {
 }
 
 .macbook {
-  width: 60%;
+  width: 50%;
   height: auto;
   margin-right: 32px;
   margin-top: 70px;
@@ -277,16 +260,16 @@ h2 {
   flex-direction: column;
   justify-content: center;
   margin-top: -170px;
-  width: 630px;
+  width: 50%;
   height: auto;
-  font-size: 28px;
-  font-family: "SF Pro Display Regular";
-  text-align: right;
-  margin-right: 162px;
+  font-size: 2vw;
+  font-family: SFDisplay-Regular;
+  text-align: left;
+  margin-right: 90px;
   color: white;
 }
 .culture {
-  width: 630px;
+  width: 60vw;
   height: auto;
   margin-bottom: 12px;
 }
@@ -295,16 +278,17 @@ h2 {
   background-color: #222247;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 120vh;
+  width: 100vw;
+  height: 177vh;
   margin-bottom: 0px;
+  z-index: 0;
 }
 
 .bottom {
   color: #24cb8d;
   width: 100%;
-  font-size: 76px;
-  font-family: "SF Pro Display Bold";
+  font-size: 6vw;
+  font-family: SFDisplay-Bold;
 }
 
 .softserveicon {
@@ -312,7 +296,6 @@ h2 {
   flex-direction: row;
   width: 80%;
   height: auto;
-  margin-left: 20%;
 }
 
 .learnmore {
@@ -332,13 +315,13 @@ h2 {
 
 .champions {
   position: relative;
-  width: 604px;
+  width: 90%;
   color: white;
-  font-family: "SF Pro Display Semibold";
-  font-size: 28px;
+  font-family: SFDisplay-Semibold;
+  font-size: 1.5vw;
   line-height: auto;
-  margin-top: -24px;
-  margin-bottom: 32px;
+  margin-top: -36px;
+  margin-bottom: 8px;
 }
 
 .nextlevel {
@@ -347,7 +330,7 @@ h2 {
   background-color: #f1f1f5;
   text-align: center;
   margin: auto;
-  font-size: 28px;
+  font-size: 30px;
 
   margin-bottom: 163px;
 }
@@ -421,8 +404,8 @@ h2 {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: 110vw;
-  height: 40vh;
+  width: 100vw;
+  height: 36vh;
   border-radius: 100% 100% 0 0;
   overflow: hidden;
   margin: 0 auto;
@@ -434,13 +417,13 @@ h2 {
   color: white;
   margin: auto;
   margin-top: 48px;
-  font-size: 36px;
+  font-size: 2vw;
   font-weight: 700;
   text-align: center;
 }
 
 .follow {
-  font-size: 18px;
+  font-size: 1.5vw;
   font-weight: 200;
   margin-top: 6px;
   margin-bottom: 36px;
@@ -449,9 +432,26 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 30%;
+  width: 35%;
   margin: auto;
 }
+
+.twitter {
+  width: 5vw;
+}
+
+.youtube {
+  width: 5vw;
+}
+
+.instagram {
+  width: 5vw;
+}
+
+.linkedin {
+  width: 5vw;
+}
+
 .footer {
   width: 100%;
   height: 60px;
@@ -471,6 +471,501 @@ h2 {
   justify-content: space-around;
   width: 80%;
   height: auto;
+}
+
+@media screen and (max-width: 1675px) {
+  .sidewaysborder {
+    width: 372px;
+    bottom: -332px;
+    margin-left: -101px;
+  }
+
+  .superpower {
+    height: 480px;
+  }
+
+  h2 {
+    margin-top: 43px;
+  }
+
+  .bottomline {
+    position: relative;
+    background-color: #222247;
+    display: flex;
+    flex-direction: row;
+    height: 142vh;
+    margin-top: 550px;
+    margin-bottom: 0px;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 1570px) {
+  .superpower {
+    height: 1058px;
+  }
+
+  .bottomline {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .sidewaysborder {
+    width: 331px;
+    bottom: -303px;
+    margin-left: -82px;
+  }
+
+  h2 {
+    margin-top: 41px;
+  }
+}
+
+@media screen and (max-width: 1486px) {
+  .diversity {
+    margin-left: 148px;
+  }
+
+  .description {
+    margin-left: 148px;
+  }
+
+  .buttons {
+    margin-left: 148px;
+  }
+
+  .superpower {
+    height: 1000px;
+  }
+
+  .booklongcall {
+    width: 38vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .diversity {
+    margin-left: 124px;
+  }
+
+  .description {
+    margin-left: 124px;
+  }
+
+  .buttons {
+    margin-left: 124px;
+  }
+
+  .fundynamic {
+    margin: auto;
+    width: 80%;
+    margin-top: 72px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .bonding {
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .superpower {
+    height: 870px;
+  }
+
+  .sidewaysborder {
+    width: 280px;
+    bottom: -261px;
+    margin-left: -82px;
+  }
+
+  h2 {
+    margin-top: 25px;
+  }
+
+  .content {
+    margin-left: 25px;
+  }
+
+  .champions {
+    margin-top: -26px;
+    margin-bottom: -12px;
+  }
+
+  .superpowerbuttons {
+    height: 48px;
+  }
+
+  .bottomline {
+    height: 122vh;
+  }
+
+  .gain {
+    font-size: 4vw;
+  }
+
+  .try {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .diversity {
+    margin-left: 112px;
+  }
+
+  .description {
+    margin-left: 112px;
+  }
+
+  .buttons {
+    margin-left: 112px;
+  }
+
+  .bottomline {
+    height: 110vh;
+  }
+
+  .booklongcall {
+    width: 44vw;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .diversity {
+    margin-left: 100px;
+  }
+
+  .description {
+    margin-left: 100px;
+  }
+
+  .buttons {
+    margin-left: 100px;
+  }
+
+  .sidewaysborder {
+    width: 267px;
+    bottom: -254px;
+    margin-left: -82px;
+  }
+
+  h2 {
+    margin-top: 25px;
+  }
+
+  .skillsframe {
+    padding-left: 70px;
+  }
+
+  .champions {
+    margin-top: -26px;
+    margin-bottom: -12px;
+  }
+
+  .super {
+    height: 42px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .sidewaysborder {
+    width: 249px;
+    bottom: -246px;
+    margin-left: -82px;
+  }
+
+  .superpower {
+    height: 750px;
+  }
+
+  .skillsframe {
+    padding-left: 62px;
+  }
+
+  .macbook {
+    margin-top: -47px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .diversity {
+    margin-left: 100px;
+  }
+
+  .description {
+    margin-left: 100px;
+  }
+
+  .buttons {
+    margin-left: 100px;
+  }
+
+  .sidewaysborder {
+    width: 243px;
+    bottom: -241px;
+    margin-left: -82px;
+  }
+
+  h2 {
+    margin-top: 25px;
+  }
+
+  .champions {
+    font-family: SFDisplay-Regular;
+    font-size: 2vw;
+    margin-top: -18px;
+  }
+
+  .super {
+    display: none;
+  }
+
+  .bottomline {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .sidewaysborder {
+    width: 220px;
+    bottom: -232px;
+    margin-left: -72px;
+  }
+
+  .ellipse {
+    height: 28vh;
+  }
+
+  .socialmedia {
+    color: white;
+    margin: auto;
+    margin-top: 48px;
+    font-size: 16px;
+  }
+
+  .follow {
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .sidewaysborder {
+    width: 198px;
+    bottom: -221px;
+    margin-left: -62px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .super {
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .sidewaysborder {
+    width: 196px;
+    bottom: -212px;
+    margin-left: -62px;
+  }
+
+  .superpower {
+    height: 670px;
+  }
+  .skillsframe {
+    padding-left: 60px;
+  }
+
+  h2 {
+    font-weight: 200;
+    margin-top: 18px;
+  }
+  .macbook {
+    margin-top: -80px;
+  }
+  .nextlevel {
+    margin-top: -30px;
+    padding-top: 36px;
+  }
+
+  .bottomline {
+    height: 85vh;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .sidewaysborder {
+    width: 180px;
+    bottom: -202px;
+    margin-left: -52px;
+  }
+
+  .superpower {
+    height: 560px;
+  }
+
+  .bottomline {
+    height: 92vh;
+  }
+
+  .booklongcall {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 32px;
+    background-image: url("./Photos/girlmiddlesmall1.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin-bottom: 124px;
+  }
+
+  .toptext {
+    margin-bottom: 280px;
+  }
+
+  .diversity {
+    margin-top: 24px;
+  }
+
+  .button {
+    width: 32vw;
+    height: 42px;
+    margin-right: 12px;
+    margin-top: 16px;
+    background: none;
+    border: none;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+  }
+
+  .button-primary {
+    background: #24cb8d;
+    color: white;
+  }
+
+  .button-outline {
+    border: solid 1px #222247;
+    color: #222247;
+  }
+
+  .sidewaysborder {
+    width: 171px;
+    bottom: -166px;
+    margin-left: -52px;
+  }
+
+  .champions {
+    font-family: SFDisplay-Regular;
+    margin-top: -18px;
+  }
+
+  .skillsframe {
+    top: 55px;
+    padding-left: 48px;
+  }
+  .white {
+    border-color: #ffffff;
+    color: #fff;
+  }
+
+  .superpowerbuttons {
+    display: none;
+  }
+  .nav-button {
+    width: 24vw;
+    max-width: 120px;
+  }
+
+  .bottomline {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+
+  .macbook {
+    margin-top: 90px;
+  }
+
+  .cultureof {
+    margin-top: 24px;
+    margin-right: 0px;
+  }
+
+  .whiteborder {
+    margin-top: 84px;
+    bottom: 148px;
+  }
+
+  .nextlevel {
+    margin-top: -100px;
+    padding-top: 36px;
+  }
+
+  .try {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .sidewaysborder {
+    width: 148px;
+    bottom: -152px;
+    margin-left: -42px;
+  }
+
+  .superpower {
+    height: 480px;
+  }
+
+  .nextlevel {
+    font-size: 4vw;
+    height: 345px;
+  }
+
+  .thenext {
+    font-size: 10.5vw;
+  }
+
+  .expert {
+    font-size: 5vw;
+  }
+
+  .booklongcall {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .superpower {
+    height: 408px;
+  }
+
+  .bottomline {
+    height: 82vh;
+  }
+
+  .cultureof {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .softserveicon {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -518,23 +1013,31 @@ h2 {
     width: 80%;
     display: flex;
     flex-direction: column;
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-right: 0px;
+    margin-bottom: 130px;
   }
 
   .top {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 32px;
+    background-image: url("./Photos/girlmiddlesmall.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin-bottom: 124px;
   }
 
   .diversity {
     width: 100%;
     height: auto;
-    font-family: "SF Pro Display Semibold";
+    font-family: SFDisplay-Semibold;
     font-size: 24px;
     line-height: auto;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-bottom: 16px;
     margin-top: 24px;
   }
@@ -543,44 +1046,12 @@ h2 {
     width: 100%;
     height: auto;
     font-size: 16px;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  .freedemo {
-    width: 120px;
-    height: 38px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 12px;
-    background: #24cb8d;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-  }
-
-  .bookcall {
-    width: 120px;
-    height: 38px;
-    font-size: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
-    background-color: white;
-    border: solid 1px #222247;
-    color: #222247;
-    border-radius: 6px;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .buttons {
-    margin-left: 24px;
+    margin-left: 0px;
     display: flex;
     justify-content: left;
   }
@@ -597,67 +1068,40 @@ h2 {
     font-size: 32px;
     font-weight: 400;
   }
-  .superpower {
-    position: relative;
-    width: 100%;
-    margin-top: 108px;
-    height: 320px;
-    background-color: #222247;
-    margin-bottom: 0px;
-  }
-
-  .skillsframe {
-    position: absolute;
-    width: 350px;
-    height: 220px;
-    top: 32px;
-    left: 0;
-    padding-left: 0px;
-    padding-right: 24px;
-  }
 
   .people {
     width: 100%;
   }
 
-  .champions {
-    position: relative;
-    width: 60%;
-    height: auto;
-    font-size: 10px;
-    font-weight: 100;
+  .superpower {
+    height: 375px;
+  }
+
+  .sidewaysborder {
+    display: none;
+  }
+
+  .skillsframe {
+    top: 28px;
+    padding-left: 16px;
   }
 
   h2 {
     position: relative;
     color: white;
-    font-family: "SF Pro Display Bold";
-    font-size: 14px;
+    font-family: SFDisplay-Semibold;
+    font-size: 16px;
     font-weight: 400;
-    margin-top: 7px;
+    margin-top: 17px;
     margin-bottom: 28px;
   }
 
-  .sidewaysborder {
-    width: 116px;
-    border: solid 1px #24cb8d;
-    rotate: 90deg;
-    position: relative;
-    z-index: 2;
-    bottom: -97px;
-    margin-left: -38px;
-  }
-
   .content {
-    margin-left: 37px;
+    margin-left: 18px;
   }
 
-  .spfreedemo {
-    display: none;
-  }
-
-  .spbookcall {
-    display: none;
+  .champions {
+    font-size: 11px;
   }
 
   .macbook {
@@ -668,82 +1112,58 @@ h2 {
   }
 
   .bottomline {
-    height: 550px;
-  }
-
-  .cultureof {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: -170px;
-    width: 100%;
-    height: auto;
-    font-size: 12px;
-    font-family: "SF Pro Display Regular";
-    text-align: right;
-    margin-right: 24px;
-    color: white;
+    margin: auto;
+    align-items: center;
   }
+
+  .macbook {
+    margin-top: 90px;
+    width: 60%;
+  }
+
   .culture {
-    width: 100%;
-    height: auto;
-    margin-bottom: 12px;
+    width: 100vw;
   }
-  .bottom {
-    font-size: 24px;
+  .cultureof {
+    margin-top: 24px;
+    margin-right: 0px;
   }
 
   .whiteborder {
-    bottom: 120px;
+    margin-top: 84px;
+    bottom: 148px;
   }
 
   .nextlevel {
-    font-size: 16px;
-    height: 212px;
-    margin-bottom: 60px;
-  }
-  .ready {
-    padding-top: 20px;
-  }
-
-  .thenext {
-    font-size: 24px;
-  }
-
-  .expert {
-    font-size: 14px;
+    font-size: 4vw;
+    height: 300px;
   }
 
   .booklongcall {
-    width: 250px;
-    margin-top: 20px;
-  }
-
-  .gain {
-    font-size: 24px;
-    margin-bottom: 24px;
-    margin-right: 24px;
-  }
-
-  .try {
-    font-size: 14px;
-    margin-top: 8px;
-  }
-
-  .gainfreedemo {
-    width: 120px;
-    height: 38px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 12px;
-    background: #24cb8d;
-    color: white;
-    border: none;
+    width: 80vw;
+    height: 48px;
+    margin-top: 24px;
+    background-color: #f1f1f5;
+    border: solid 1px #222247;
+    color: #222247;
     border-radius: 6px;
     overflow: hidden;
     justify-content: center;
     align-items: center;
     display: inline-flex;
+  }
+
+  .gain {
+    font-size: 18px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+  }
+
+  .try {
+    font-size: 12px;
+    margin-top: 8px;
   }
 
   .gainborderbottom {
@@ -762,7 +1182,7 @@ h2 {
 
   .socialicons {
     display: flex;
-    height: 36px;
+    height: 24px;
     flex-direction: row;
     justify-content: space-between;
     width: 40%;
@@ -770,12 +1190,100 @@ h2 {
   }
 
   .ellipse {
+    width: 100%;
     height: 28vh;
+    border-radius: 100% 100% 0 0;
     overflow: hidden;
+    margin: 0 auto;
+    background-color: #3f3f6e;
+    z-index: 0;
   }
 
   .footerinfo {
     font-size: 10px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .skillsframe {
+    width: 56vw;
+    height: 28vw;
+  }
+
+  .content {
+    margin-left: 8px;
+  }
+
+  h2 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .culture {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .nextlevel {
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .skillsframe {
+    width: 56vw;
+    height: 30vw;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .skillsframe {
+    width: 62vw;
+    height: 37vw;
+  }
+
+  .content {
+    margin-left: 8px;
+  }
+
+  h2 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .superpower {
+    height: 292px;
+  }
+
+  .whiteborder {
+    margin-top: 24px;
+  }
+
+  .nextlevel {
+    height: 243px;
+    margin-top: -55px;
+    margin-bottom: 82px;
+  }
+
+  .culture {
+    width: 80%;
+  }
+
+  .trustedby {
+    margin-bottom: 82px;
+  }
+
+  .ellipse {
+    height: 23vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nextlevel {
+    height: 220px;
   }
 }
