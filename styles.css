@@ -855,6 +855,7 @@ h2 {
   }
 
   .button {
+    font-size: 14px;
     width: 32vw;
     height: 42px;
     margin-right: 12px;
@@ -868,11 +869,13 @@ h2 {
   }
 
   .button-primary {
+    font-size: 14px;
     background: #24cb8d;
     color: white;
   }
 
   .button-outline {
+    font-size: 14px;
     border: solid 1px #222247;
     color: #222247;
   }
@@ -898,9 +901,11 @@ h2 {
   }
 
   .superpowerbuttons {
+    font-size: 14px;
     display: none;
   }
   .nav-button {
+    font-size: 14px;
     width: 24vw;
     max-width: 120px;
   }
