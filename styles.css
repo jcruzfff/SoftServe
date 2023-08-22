@@ -110,6 +110,7 @@ nav {
   align-items: center;
   justify-content: center;
   display: inline-flex;
+  text-decoration: none;
 }
 
 .button-primary {
@@ -144,6 +145,7 @@ nav {
 }
 
 .booklongcall {
+  font-size: 1vw;
   width: 32vw;
   height: 50px;
   margin-top: 40px;
@@ -155,6 +157,7 @@ nav {
   justify-content: center;
   align-items: center;
   display: inline-flex;
+  text-decoration: none;
 }
 
 .description {
@@ -269,7 +272,7 @@ h2 {
   color: white;
 }
 .culture {
-  width: 60vw;
+  width: 50vw;
   height: auto;
   margin-bottom: 12px;
 }
