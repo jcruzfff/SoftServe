@@ -55,6 +55,7 @@ nav {
 
 .login {
   background: white;
+  color: black;
   border: none;
   margin-right: 40px;
 }
@@ -955,6 +956,7 @@ h2 {
 
   .booklongcall {
     width: 80vw;
+    font-size: 14px;
   }
 }
 
