@@ -777,6 +777,16 @@ h2 {
   .bottomline {
     height: 137vh;
   }
+  .bottom {
+    font-size: 5vw;
+  }
+
+  .learnmore {
+    padding-right: 24px;
+  }
+  .macbook {
+    margin-right: 0px;
+  }
   .ellipse {
     height: 56vh;
   }
