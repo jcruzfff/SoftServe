@@ -781,6 +781,10 @@ h2 {
     font-size: 5vw;
   }
 
+  .booklongcall {
+    font-size: 2vw;
+  }
+
   .learnmore {
     padding-right: 24px;
   }
@@ -805,9 +809,9 @@ h2 {
   }
 }
 
-@media screen and (max-width: 980px), (max-height: 500px) {
+@media screen and (max-width: 980px), (max-height: 680px) {
   .whiteborder {
-    bottom: 80px;
+    bottom: 40px;
   }
 }
 
@@ -838,6 +842,10 @@ h2 {
 
   .bottomline {
     height: 122vh;
+  }
+
+  .softserveicon {
+    margin-bottom: 32px;
   }
 }
 
@@ -878,6 +886,10 @@ h2 {
 
   .diversity {
     margin-top: 24px;
+    margin-left: 24px;
+  }
+  .description {
+    margin-left: 24px;
   }
 
   .button {
@@ -892,6 +904,10 @@ h2 {
     align-items: center;
     justify-content: center;
     display: inline-flex;
+  }
+
+  .buttons {
+    margin-left: 24px;
   }
 
   .button-primary {
@@ -975,6 +991,7 @@ h2 {
   .nextlevel {
     font-size: 4vw;
     height: 345px;
+    margin-top: -30px;
   }
 
   .thenext {
@@ -1000,6 +1017,9 @@ h2 {
     height: 82vh;
   }
 
+  .whiteborder {
+    display: none;
+  }
   .cultureof {
     width: 80%;
     font-size: 14px;
