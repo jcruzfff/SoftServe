@@ -976,6 +976,7 @@ h2 {
   .nextlevel {
     margin-top: -100px;
     padding-top: 36px;
+    position: relative;
   }
 
   .try {
@@ -991,7 +992,10 @@ h2 {
   .nextlevel {
     font-size: 4vw;
     height: 345px;
-    margin-top: -30px;
+  }
+
+  .bottomline {
+    height: 102vh;
   }
 
   .thenext {
